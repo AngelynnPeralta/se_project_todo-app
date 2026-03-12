@@ -107,3 +107,8 @@
     content: "";
   }
 }
+
+.todo__delete-btn:hover {
+  opacity: 0.6;
+  }
+  
