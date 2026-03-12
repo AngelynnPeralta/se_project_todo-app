@@ -74,18 +74,14 @@ class FormValidator {
     this._setEventListeners();
   }
 
-_resetValidation() {
-this._formEl.reset();
-
-this._inputList.forEach((item) => {
-this._hideInputError(item);
-})
-this._toggleButtonState();
-this._buttonElement.disabled = true;
-
-   
-}
-
+  resetValidation() {
+    this._formEl.reset();
+    this._inputList.forEach((item) => {
+      this._hideInputError(item);
+    });
+    this._toggleButtonState();
+    this._buttonElement.disabled = true;
+  }
 }
 
 export default FormValidator;

@@ -91,7 +91,7 @@ addTodoForm.addEventListener("submit", (evt) => {
   const values = { name, date, id };
   const todo = generateTodo(values);
   todosList.append(todo);
-
+  newTodoValidator.resetValidation(); 
   closeModal(addTodoPopup);
 
 
@@ -109,4 +109,4 @@ newTodoValidator.enableValidation();
 
 
 
-newTodoValidator._resetValidation(); 
+
