@@ -1,17 +1,22 @@
-# Simple Todo App
+# Get it done Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+This project is a get it done todo app for helping you remember the tasks you need to get done on a daily, weekly or monthly basis.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+You add todos
+List your todos
+You mark todos as done
+You can delete todos
+You can add dates 
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+HTML,CSS & Javascript was used on this project. OOP was used to organize the code as well to be more readable.
+
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+https://angelynnperalta.github.io/se_project_todo-app/
