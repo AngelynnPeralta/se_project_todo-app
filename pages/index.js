@@ -4,7 +4,6 @@ import { initialTodos, validationConfig } from "../utils/constants.js";
 
 import Todo from "../components/Todo.js";
 
-import formValidator from "../components/FormValidator.js";
 import FormValidator from "../components/FormValidator.js";
 
 const addTodoButton = document.querySelector(".button_action_add");
@@ -68,7 +67,6 @@ const generateTodo = (data) => {
 //};
 
 
-
 addTodoButton.addEventListener("click", () => {
   openModal(addTodoPopup);
 });
@@ -76,6 +74,12 @@ addTodoButton.addEventListener("click", () => {
 addTodoCloseBtn.addEventListener("click", () => {
   closeModal(addTodoPopup);
 });
+
+
+function renderTodo(todoData) {
+  const todo = generateTodo(todoData);
+  todosList.append(todo);
+}
 
 addTodoForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
@@ -89,18 +93,15 @@ addTodoForm.addEventListener("submit", (evt) => {
   const id = uuidv4();
 
   const values = { name, date, id };
-  const todo = generateTodo(values);
-  todosList.append(todo);
+ renderTodo(values);
   newTodoValidator.resetValidation(); 
   closeModal(addTodoPopup);
-
 
 
 });
 
 initialTodos.forEach((item) => {
-  const todo = generateTodo(item);
-  todosList.append(todo);
+renderTodo(item);
 });
 
 
