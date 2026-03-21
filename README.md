@@ -14,6 +14,10 @@ You can add dates
 
 HTML,CSS & Javascript was used on this project. OOP was used to organize the code as well to be more readable.
 
+<img width="197" height="72" alt="image" src="https://github.com/user-attachments/assets/b15a844b-e85b-47d5-8761-46af3ed3866b" />
+
+
+<img width="774" height="672" alt="image" src="https://github.com/user-attachments/assets/6b3c0e3a-c368-44f6-835b-7606c2a9eeac" />
 
 ## Deployment
 
